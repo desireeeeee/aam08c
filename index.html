@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<link rel="stylesheet" href="marathon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html" class="w3-button w3-bar-item">Home</a>
+  <a href="page2.html" class="w3-button w3-bar-item">Race Information</a>
+  <a href="page3.html" class="w3-button w3-bar-item">Rules & Regulations</a>
+  <a href="page4.html" class="w3-button w3-bar-item">FAQs, Contact Us</a>
+</div>
+
+<section>
+  <img class="mySlides" src="osim sundown.jpg"
+  style="width:100%;height:100%">
+  <img class="mySlides" src="sundown background.jpg"
+  style="width:100%;height:100%">
+  <img class="mySlides" src="sundown.jpg"
+  style="width:100%;height:100%">
+</section>
+
+<section>
+  <h1>ABOUT US</h1>
+  <p>Sundown Marathon which begins in Singapore in 2008 will expand its footprint in China and to the US in 2019. As Sundown partners with more event organisers around the world, it hopes to leverage on the strength of its partners and race organisers to enhance the experience of its local and international participants. <br><br>
+
+Asia’s biggest night run, OSIM Sundown Marathon is set to return to Singapore on June 1, 2019, under the new event management of Infinitus Productions. Bringing a fresh perspective to Asia’s biggest night run, the team will preserve the unique characteristics that make the race a favourite amongst the running community, and yet expand its focus to highlight inclusivity in sports.<br><br>
+
+Reflecting on the brand’s success, Max Phua, Director, F4U Pte Ltd says, “the OSIM Sundown Marathon Singapore is our flagship event and we are happy to partner Jeffrey Foo, Director of Infinitus Productions Pte Ltd who was one of the co-founders of Sundown Marathon when we first started.”<br><br>
+
+“We are thrilled to be working with F4U again and to continue our journey on Sundown Marathon. We look forward to contributing our experience and expertise to this well-loved and established race and to create an unforgettable experience for our runners, returning and new ones alike,” says Jeffrey Foo, Director of Infinitus Productions Pte. Ltd.<br><br>
+
+This year, the OSIM Sundown Marathon Singapore also aims to champion the cause of inclusivity in sports and the wider community and Infinitus Productions will lead by example and contribute funds to the ongoing charity initiative, Sundown with Love. Some of the beneficiaries include the Singapore Disability Sports Council, The Straits Times School Pocket Money Fund and RunningHour. For every race slot purchased, $1 of the registration fee will be donated to the adopted beneficiaries, and runners will also have the opportunity to donate additional funds to the causes via the official event website.<br><br>
+
+Phua further commented, “we are really pleased that we can promote sports inclusivity via our brand. We are proud that Infinitus Productions is aligned with us on our objectives as we expand further afield, creating footprints in Southeast Asia, China and to the US.”<br><br>
+
+Sundown’s partner in China will also implement a plastic plan that aims to reduce plastic waste by 50 percent during such races. “Low carbon represents a healthier, safer, more natural, and more environmental friendly lifestyle. And we are incorporating this lifestyle into Sundown. We hope Sundown China is not only a brand or a race for participants, but also a lifestyle that can make the world a better place,” Zejin Jiu, Busines Director, Sundown China.<br><br>
+
+“We hope to spread the excitement around Sundown’s races globally to inspire more people to live a healthy lifestyle and share the joys as a Sundown Running Community,” Max Phua, Director of F4U Pte Ltd.</p>
+</section>
+
+
+<!-- Footer -->
+<div class="footer">
+<a href="https://www.facebook.com/SundownMarathonSG/" target="_blank" class="fa fa-facebook"></a>
+<a href="https://twitter.com/SundownMarathon" target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/sundownmarathon/" target="_blank" class="fa fa-instagram"></a>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 1, 2019").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EVENT START/OVER";
+  }
+}, 1000);
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
+
+
